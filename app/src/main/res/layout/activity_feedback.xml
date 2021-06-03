@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/custom_btn"
+    android:layout_height="match_parent"
+    tools:context=".Fragment_Activity.Feedback">
+    <TextView
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="40dp"
+        android:id="@+id/feedback1"
+        android:textColor="#ffffff"
+        android:textStyle="normal"
+        android:gravity="center_horizontal"
+        android:text="Feedback"/>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:scaleType="fitXY"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/feed_book"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:textColor="#ffffff"
+        android:layout_marginTop="10dp"
+        android:text="Very Dissatisfied"
+        android:textSize="20dp"
+        android:id="@+id/feedback_text"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+        <RatingBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:progressBackgroundTint="#ffffff"
+            android:id="@+id/ratingbar"
+            android:layout_marginTop="10dp"
+            android:progressTint="#FB8C00"
+            android:numStars="5"
+            />
+        <!--we are evaluating feedback on the basis of 5 stars hence numstars=5-->
+       <EditText
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:ems="10"
+           android:gravity="start|top"
+           android:lines="3"
+           android:background="#ffffff"
+           android:layout_marginLeft="30dp"
+           android:layout_marginRight="30dp"
+           android:hint="Enter your feedback"
+           android:layout_marginTop="10dp"
+           android:padding="5dp"
+           android:inputType="textMultiLine"/>
+        <!--4 lines to enter in editText-->
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/feedback_btn"
+            android:layout_marginRight="50dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="20dp"
+            android:background="#2d4059"
+            android:textColor="#ffffff"
+            android:text="Send Feedback"
+        />
+    </LinearLayout>
+
+</LinearLayout>

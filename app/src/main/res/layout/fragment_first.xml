@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_list"
+    android:id="@+id/layout_fragment1"
+    tools:context=".Tab_Activity.First">
+
+<!--create the fragments by right click on layout->New-> Fragment->
+    Blank Fragment-->
+    <!-- TODO: Update blank fragment layout -->
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:id="@+id/listView_1"
+        android:padding="20dp">
+
+    </ListView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/text_for_first"
+        android:text="Click below View Books to get more stuff!"
+        android:textSize="20sp"
+        android:background="@drawable/text_style_two"
+        android:textColor="@color/Black"
+        android:layout_below="@+id/listView_1"
+        android:padding="10sp"
+        android:textStyle="normal"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text_for_first"
+        android:textStyle="italic"
+        android:layout_centerInParent="true"
+        android:id="@+id/first_tv"
+        android:textSize="23sp"
+        android:textColor="#fa26a0"
+        android:padding="10sp"
+        android:text="View Books"/>
+</RelativeLayout>

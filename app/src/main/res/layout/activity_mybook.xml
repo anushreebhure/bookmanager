@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:padding="30dp"
+    android:id="@+id/layout"
+    android:background="@drawable/gradient_list2"
+    android:layout_height="match_parent"
+    tools:context=".MainFiles.MainActivity">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25dp"
+        android:text=""
+        android:layout_margin="20dp"
+        android:layout_marginTop="100dp"/>
+    <EditText
+        android:id="@+id/editTextID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:textSize="20sp"
+        android:layout_marginTop="70dp"
+        android:inputType="textPersonName"
+        android:hint="Account No: "/>
+    <EditText
+        android:id="@+id/editTextName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_below="@+id/editTextID"
+        android:ems="10"
+        android:textSize="20sp"
+        android:inputType="textPersonName"
+        android:hint="Book Name: "/>
+    <EditText
+        android:id="@+id/editTextSurName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_below="@+id/editTextName"
+        android:ems="10"
+        android:textSize="20sp"
+        android:inputType="textPersonName"
+        android:hint="Author Name: "/>
+    <EditText
+        android:id="@+id/editTextMarks"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:ems="10"
+        android:layout_below="@id/editTextSurName"
+        android:textSize="20sp"
+        android:inputType="textPersonName"
+        android:hint="Publisher: "/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextMarks"
+        android:id="@+id/btn_insert"
+        android:text="INSERT"
+        android:background="@drawable/custom_button2"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="30dp"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="#0c056d"
+
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextMarks"
+        android:id="@+id/btn_ViewAll"
+        android:text="View "
+        android:layout_marginLeft="30dp"
+        android:background="@drawable/custom_button2"
+        android:layout_toRightOf="@id/btn_insert"
+        android:layout_marginTop="30dp"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="#0c056d"
+
+
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextMarks"
+        android:id="@+id/btn_Update"
+        android:text="Update"
+        android:layout_marginLeft="30dp"
+        android:background="@drawable/custom_button2"
+        android:layout_toRightOf="@id/btn_ViewAll"
+        android:layout_marginTop="30dp"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="#0c056d"
+
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_ViewAll"
+        android:id="@+id/btn_Delete"
+        android:background="@drawable/custom_button2"
+        android:text="Delete"
+        android:layout_centerInParent="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="#0c056d"
+
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_Delete"
+        android:id="@+id/btn_save"
+        android:background="@drawable/custom_button2"
+        android:text="Save"
+        android:textStyle="bold"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="15dp"
+        android:textSize="18sp"
+        android:textColor="#0c056d"
+        />
+
+</RelativeLayout>

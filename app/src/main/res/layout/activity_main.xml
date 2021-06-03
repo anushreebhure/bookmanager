@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--since we are actually implementing the drawer layout-->
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainFiles.MainActivity"
+    android:id="@+id/drawer">
+
+<!--include the content main layout-->
+    <include
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        layout="@layout/content_main"/>
+
+<!--drag and drop the navigation view from container-->
+    <com.google.android.material.navigation.NavigationView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/nav_view"
+        app:menu="@menu/nav_menu"
+        app:headerLayout="@layout/nav_header"
+        android:fitsSystemWindows="true"
+        android:layout_gravity="start"/>
+    <!--to hide the menu items on the left side-->
+
+
+</androidx.drawerlayout.widget.DrawerLayout>
