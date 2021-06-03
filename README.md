@@ -1,1 +1,1 @@
-# android-tablayout-with-navigation-drawer
+A simple book manager application developed with SQL database. The application is having lot of functionalies, like user can play audiobooks, read e-books, search for books available in the database, search for the name of book to get to know about the author name. Also, the books can be shared on any platform.
